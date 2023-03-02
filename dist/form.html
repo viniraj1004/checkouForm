@@ -1,0 +1,266 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>checkoutForm</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+
+<body>
+
+    <div class="container">
+        <div class="row mar-auto max-width padding">
+            <img src="icons/bootstrap.svg" alt="Bootstrap icon" width="70" height="70">
+            <h2 class="text-align padding-top">Checkout form</h2>
+            <p class="text-align text-size font-weight">Below is an example form built entirely with Bootstrap's form
+                controls. Each required form group has a
+                validation state that can be triggered by attempting to submit the form without completing it.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mar-auto max-width">
+            <div class="col-md-8">
+                <h4>Billing address</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="validationDefault01" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="validationDefault01" value="" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationDefault02" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="validationDefault02" value="" required>
+                    </div>
+                </div>
+                <div class="col-md-12 form-padding">
+                    <label for="validationDefault01" class="form-label">Username</label>
+                    <label class="visually-hidden" for="specificSizeInputGroupUsername">Username</label>
+                    <div class="input-group">
+                        <div class="input-group-text">@</div>
+                        <input type="text" class="form-control" id="specificSizeInputGroupUsername"
+                            placeholder="Username">
+                    </div>
+                </div>
+                <div class="col-md-12 form-padding">
+                    <label for="validationDefault01" class="form-label">Email <span
+                            class="text-muted">(Optional)</span></label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="specificSizeInputGroupUsername"
+                            placeholder="Your@example.com">
+                    </div>
+                </div>
+                <div class="col-md-12 form-padding">
+                    <label for="validationDefault01" class="form-label">Address</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="specificSizeInputGroupUsername"
+                            placeholder="1234 Main St">
+                    </div>
+                </div>
+                <div class="col-md-12 form-padding">
+                    <label for="validationDefault01" class="form-label">Address <span
+                            class="text-muted">(Optional)</span></label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="specificSizeInputGroupUsername"
+                            placeholder="Apartment or Suite">
+                    </div>
+                </div>
+                <div class="row max-width">
+                    <div class="col-md-5">
+                        <label for="country">Country</label>
+                        <select class="form-select-custom" id="validationTooltip04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>India</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid country.
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="country">State</label>
+                        <select class="form-select-custom" id="validationTooltip05" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>Telangana</option>
+                            <option>Andhara Pradesh</option>
+                            <option>Karnataka</option>
+                            <option>Tamil Nadu</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid country.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault01">Zip</label>
+                        <input type="text" class="form-control" id="zip" value="" required>
+                    </div>
+                    <div class="col-md-12 margin">
+                        <hr class="style1">
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Shipping address is the same as my billing address
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Save this information for next time
+                            </label>
+                        </div>
+                    </div>
+                    <div class="margin">
+                        <hr>
+                    </div>
+                    <div class="margin">
+                        <h4>Payment</h4>
+                    </div>
+                    <div class="col-md-12 form-margin-bottom">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Debit card
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Credit card
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                PayPal
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-margin-top">
+                        <label for="validationDefault01" class="form-label">Name on card</label>
+                        <input type="text" class="form-control" id="validationDefault01" value="" required>
+                        <small class="text-muted">Full name as displayed on card</small>
+                    </div>
+                    <div class="col-md-6 form-margin-top">
+                        <label for="validationDefault02" class="form-label">Credit card number</label>
+                        <input type="text" class="form-control" id="validationDefault02" value="" required>
+                    </div>
+
+                    <div class="col-md-3 form-margin-top">
+                        <label for="validationDefault01" class="form-label">Expiration</label>
+                        <input type="text" class="form-control" id="validationDefault01" value="" required>
+                    </div>
+                    <div class="col-md-3 form-margin-top">
+                        <label for="validationDefault02" class="form-label">CVV</label>
+                        <input type="text" class="form-control" id="validationDefault02" value="" required>
+                    </div>
+                    <div class="col-md-12 margin">
+                        <hr class="style1">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary text-size" type="button">Continue to checkout</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h4 class="text-primary">Your cart
+                    <span class="badge rounded-pill bg-primary float-end">3</span>
+                </h4>
+                <div class="row form-padding">
+                    <div class="col-md-12">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div>
+                                    <div class="fw-bold">Product name</div>
+                                    Brief description
+                                </div>
+                                <span class="text-muted">$12</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div>
+                                    <div class="fw-bold">Second product</div>
+                                    Brief description
+                                </div>
+                                <span class="text-muted">$8</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div>
+                                    <div class="fw-bold">Third item</div>
+                                    Brief description
+                                </div>
+                                <span class="text-muted">$5</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div>
+                                    <div class="fw-bold">Promo code</div>
+                                    <small><span class="text-success">EXAMPLECODE</span></small>
+                                </div>
+                                <span class="text-success">-$5</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start form-margin">
+                                <div>
+                                    <div class="fw-normal">Total(USD)</div>
+                                </div>
+                                <span class="fw-bold">$20</span>
+                            </li>
+                        </ul>
+
+                        <div class="card">
+                            <ul class="redeem-padding">
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Promo code"
+                                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                                            <button class="btn btn-secondary" type="button"
+                                                id="button-addon2">Redeem</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <!--<form class="card p-2">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Promo code">
+                                <button type="submit" class="btn btn-secondary">Redeem</button>
+                            </div>
+                        </form>-->
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-center form-marg form-padd">
+                <span class="text-muted">© 2017–2021 Company Name</span>
+                <p class="text-center">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Support</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src=" js/popper.min.js">
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
